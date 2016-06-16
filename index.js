@@ -23,8 +23,10 @@ module.exports = {
                 var style = block.kwargs.style || 'info';
 
                 return '<div class="alert alert-'+CLASSES[style]+'">'
+                    + '<p>'
                     + ICONS[style]
                     + block.body
+                    + '</p>'
                     + '</div>';
             }
         }
